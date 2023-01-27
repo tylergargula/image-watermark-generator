@@ -1,6 +1,11 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
+/*
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -110,8 +115,7 @@ input, select, textarea {
 
 /* Type */
 
-	body, input, select, textarea,
-	 .custom-file-input::file-selector-button {
+	body, input, select, textarea {
 		color: #585858;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
@@ -121,8 +125,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 1680px) {
 
-			body, input, select, textarea,
-			 .custom-file-input::file-selector-button {
+			body, input, select, textarea {
 				font-size: 14pt;
 			}
 
@@ -130,8 +133,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 1280px) {
 
-			body, input, select, textarea,
-			 .custom-file-input::file-selector-button {
+			body, input, select, textarea {
 				font-size: 12pt;
 			}
 
@@ -149,7 +151,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #84f2d8  !important;
+			color: #f2849e !important;
 		}
 
 	strong, b {
@@ -1854,8 +1856,8 @@ input, select, textarea {
 			}
 
 			.icon.style2:hover {
-				color: #84f2d8 ;
-				border-color: #84f2d8 ;
+				color: #f2849e;
+				border-color: #f2849e;
 			}
 
 			.icon.style2:active {
@@ -2021,8 +2023,7 @@ input, select, textarea {
 					ul.actions:not(.fixed) li input[type="reset"],
 					ul.actions:not(.fixed) li input[type="button"],
 					ul.actions:not(.fixed) li button,
-					ul.actions:not(.fixed) li .button,
-					 ul.actions:not(.fixed) li .custom-file-input::-webkit-file-upload-button {
+					ul.actions:not(.fixed) li .button {
 						width: 100%;
 					}
 
@@ -2142,7 +2143,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background-color: transparent !important;
+		background-color: transparent;
 		border: none;
 		border-radius: 0;
 		border-bottom: solid 1px #c9c9c9;
@@ -2169,8 +2170,8 @@ input, select, textarea {
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-bottom-color: #84f2d8 ;
-			box-shadow: inset 0 -1px 0 0 #84f2d8 ;
+			border-bottom-color: #f2849e;
+			box-shadow: inset 0 -1px 0 0 #f2849e;
 		}
 
 	select {
@@ -2274,8 +2275,8 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #84f2d8 ;
-			box-shadow: 0 0 0 1px #84f2d8 ;
+			border-color: #f2849e;
+			box-shadow: 0 0 0 1px #f2849e;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2317,7 +2318,6 @@ input, select, textarea {
 	}
 
 		.image img {
-		    max-width: 100%;
 			border-radius: 4px;
 			display: block;
 		}
@@ -2363,10 +2363,6 @@ input, select, textarea {
 			}
 
 			@media screen and (max-width: 736px) {
-
-			.image img {
-			max-width: 100%;
-			}
 
 				.image.main {
 					margin: 0 0 2em 0;
@@ -2446,7 +2442,6 @@ input, select, textarea {
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
-	.custom-file-input::file-selector-button,
 	button,
 	.button {
 		-moz-appearance: none;
@@ -2481,7 +2476,6 @@ input, select, textarea {
 		input[type="submit"].icon:before,
 		input[type="reset"].icon:before,
 		input[type="button"].icon:before,
-		.custom-file-input::file-selector-button:before,
 		button.icon:before,
 		.button.icon:before {
 			margin-right: 0.5em;
@@ -2490,7 +2484,6 @@ input, select, textarea {
 		input[type="submit"].fit,
 		input[type="reset"].fit,
 		input[type="button"].fit,
-		.custom-file-input::file-selector-button.fit,
 		button.fit,
 		.button.fit {
 			width: 100%;
@@ -2499,17 +2492,15 @@ input, select, textarea {
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
-
 		button:hover,
 		.button:hover {
-			color: #84f2d8  !important;
-			box-shadow: inset 0 0 0 2px #84f2d8 ;
+			color: #f2849e !important;
+			box-shadow: inset 0 0 0 2px #f2849e;
 		}
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
-		.custom-file-input::file-selector-button:active,
 		button:active,
 		.button:active {
 			background-color: rgba(242, 132, 158, 0.1);
@@ -2518,7 +2509,6 @@ input, select, textarea {
 		input[type="submit"].small,
 		input[type="reset"].small,
 		input[type="button"].small,
-		.custom-file-input::file-selector-button.small,
 		button.small,
 		.button.small {
 			font-size: 0.6em;
@@ -2535,10 +2525,8 @@ input, select, textarea {
 		input[type="submit"].primary,
 		input[type="reset"].primary,
 		input[type="button"].primary,
-
 		button.primary,
-		.button.primary,
-		 .custom-file-input::-webkit-file-upload-button {
+		.button.primary {
 			box-shadow: none;
 			background-color: #585858;
 			color: #ffffff !important;
@@ -2549,7 +2537,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #84f2d8 ;
+				background-color: #f2849e;
 			}
 
 			input[type="submit"].primary:active,
@@ -2565,17 +2553,12 @@ input, select, textarea {
 		input[type="reset"]:disabled,
 		input[type="button"].disabled,
 		input[type="button"]:disabled,
-		.custom-file-input::file-selector-button:disabled,
 		button.disabled,
 		button:disabled,
 		.button.disabled,
 		.button:disabled {
 			pointer-events: none;
 			opacity: 0.25;
-		}
-
-	.custom-file-input::file-selector-button:hover{
-		background-color: #84f2d8 ;
 		}
 
 /* Tiles */
@@ -2723,7 +2706,7 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #84f2d8 ;
+				background-color: #f2849e;
 			}
 
 			.tiles article.style2 > .image:before {
@@ -2808,11 +2791,7 @@ input, select, textarea {
 					margin: 2.5em 0 0 2.5em;
 				}
 
-				.image img {
-			max-width: 100%;
-			    }
-
-	    }
+		}
 
 		@media screen and (max-width: 736px) {
 

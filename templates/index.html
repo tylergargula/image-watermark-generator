@@ -1,14 +1,14 @@
+
 <!DOCTYPE HTML>
 
 <html>
 	<head>
 		<title>Easily Add Watermarks to Your Photos | Watermark Express</title>
 		<meta charset="utf-8" />
-		<meta name="description" content="Protect your photos with Watermark Express, a free and easy-to-use watermark generator. Add custom text to any image in just a few clicks!"
+		<meta name="description" content="Protect your photos with Watermark Express, a free and easy-to-use watermark generator. Add custom text to any image in just a few clicks!">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="static/assets/css/main.css" />
-
-		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+		<noscript><link rel="stylesheet" href="staticassets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -19,43 +19,33 @@
 						<div class="inner">
 
 							<!-- Logo -->
-<!--								<a href="index.html" class="logo">-->
-<!--									<span class="symbol"><img src="static/images/logo.svg" alt="" /></span><span class="title">Tyler Gargula SEO & Dev</span>-->
-<!--								</a>-->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="static/images/logo.svg" alt="" /></span><span class="title">Watermark Express</span>
+								</a>
 
 
 
 						</div>
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-					</nav>
+
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1>This is Watermark Express, a free watermark<br />
+								<h1>Protect your images in seconds, a free watermark<br />
 								generator created by <a href="https://www.linkedin.com/in/tylergargula/">Tyler Gargula</a>.</h1>
 								<p>Introducing Watermark Express, the fast and easy tool that allows you to protect your digital images from unauthorized use. Quickly create custom text watermarks and save images directly to your device.</p>
 							</header>
 
 							<!-- Image Upload form -->
-							<form method="post" enctype="multipart/form-data" >
-								{{ form.hidden_tag() }}
-
-								{% for error in form.photo.errors %}
-								<span style="color: red;">{{ error }}</span>
-								{% endfor %}
+							<section>
+								<form method="post" enctype="multipart/form-data" >
+									{{ form.hidden_tag() }}
+									{% for error in form.photo.errors %}
+									<span style="color: red;">{{ error }}</span>
+									{% endfor %}
 									<div class="fields">
 										<div class="field half">
 
@@ -65,20 +55,16 @@
 									<ul class="actions">
 										<li>{{ form.photo(class="custom-file-input") }}</li>
 										<li>{{ form.submit }}</li>
-<!--										<li><input type="file" name="file" class="primary"></li>-->
-<!--										<li><input type="submit" value="Create Watermark" class="primary" /></li>-->
 									</ul>
-
 								</form>
-
-
-
-							<!-- Image Tiles -->
-							<div class="wrapper">
+							</section>
 							{% if file_url %}
-								<article class="style1">
+
+
+
+								<article>
 									<span class="image">
-											<img src="{{ file_url }}">
+										<img src="{{ file_url }}" alt="Your newly generated image" />
 									</span>
 									<a href="{{ file_url }}" download="{{ file_url }}">
 										<h2>Download</h2>
@@ -88,10 +74,10 @@
 										</div>
 
 								</article>
-							{% endif %}
-								</div>
 
-							</section>
+
+
+							{% endif %}
 						</div>
 					</div>
 
@@ -102,12 +88,12 @@
 							<section>
 								<h2>Follow Me</h2>
 								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/tylergargula/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/tylergargula" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/tylergargula/" class="icon brands style2 fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/tylergargula" class="icon brands style2 fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 							<ul class="copyright">
-								<li>&copy; <a href="https://www.linkedin.com/in/tylergargula/">Tyler Gargula.</a>All rights reserved</li>
+								<li>&copy; <a href="https://tylergargula.dev/" target="_blank">Tyler Gargula.</a>All rights reserved</li>
 							</ul>
 						</div>
 					</footer>
